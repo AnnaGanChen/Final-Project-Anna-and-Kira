@@ -1,0 +1,51 @@
+Project Overview
+This project processes and analyzes multiple psychological and behavioral datasets. It involves data cleaning, feature engineering, statistical analysis, and visualization that are also divided up into individual py files that are attatched in the folder of the repository.
+
+Functions That We Used in the Main Used
+
+Data Cleaning & Processing
+- load_and_display_csv_files() – Loads and merges CSV files. When it was a tsv file, we added (/t).
+- process_merged_dataframe() – Cleans and preprocesses the merged dataset.
+- process_times() – Extracts decision time-related variables.
+- calculate_means_and_std() – Computes mean and standard deviation for selected variables.
+- calculate_correlation_matrix() – Generates a correlation matrix for key variables.
+- create_reward_variables() – Creates new reward-related variables.
+- calculate_reward_averages() – Computes average reward scores.
+- calculate_std_rewards() – Calculates standard deviation of rewards.
+
+Statistical Analysis & Data Integration
+- load_data() – Loads individual questionnaire datasets. Can also be found in file 'statistics'.
+- calculate_aq_score() – Computes Autism Quotient (AQ) scores. Includes the coding method.
+- categorize_and_group() – Categorizes AQ scores into groups. This was done in accordance to the articles insrtuctions.
+- process_altman_data() – Processes Altman self-rating mania scale data. Details in 'statistics'.
+- process_aadis_data() – Computes total AADIS scores.
+- group_aadis_by_sum() – Groups AADIS results into clinical and non-clinical categories. Done in accordance to the article.
+- process_bdi_data() – Prepares Beck Depression Inventory (BDI) data.
+- process_bdi_groups() – Groups BDI scores. Done in accordance to the article.
+- process_bpaq_data() – Analyzes Buss-Perry Aggression Questionnaire (BPAQ) responses. Done in accordance to the article.
+- preprocess_ctqsf() – Cleans Childhood Trauma Questionnaire (CTQ-SF) data.
+- calculate_ctqsf_sums() – Computes total CTQ-SF scores and categorizes participants. Done in accordance to the article. 
+- process_dudit_data() – Processes Drug Use Disorder Identification Test (DUDIT) data. Done in accordance to the artice.
+- process_pnr_data() – Analyzes Personal Norms of Reciprocity (PNR) data. Divided in accordance to the mean, which was used as a threshold.
+- process_pvss_data() – Processes Positive Valence System Survey (PVSS) data. Divided in accordance to the mean, which was used as a threshold.
+- process_quic_data() – Cleans and analyzes Unpredictability in Childhood (QUIC) data. Divided in accordance to the mean, which was used as a threshold.
+- process_self_esteem_data() – Processes Self-Esteem Scale (SES) responses. Divided in accordance to the mean, which was used as a threshold.
+- process_susd_data() – Cleans Short Unpredictable Stress (SUS) scale data. Divided in accordance to the mean, which was used as a threshold.
+- process_teps_data() – Processes Temporal Experience of Pleasure Scale (TEPS) responses. 
+- process_teps_groups_by_threshold() – Groups TEPS data based on thresholds. Divided in accordance to the mean, which was used as a threshold.
+- process_tei_scores() – Computes Thematic Assessment of Identity (TEI) scores. 
+- group_tei_by_score() – Groups TEI scores into categories. Divided in accordance to the mean, which was used as a threshold.
+- Social Experience Questionnaire: process_and_group_by_mean.
+
+Data Merging & Classification
+- merge_dataframes() – Combines multiple questionnaire datasets.
+- classify_participants_by_clinical_occurrences() – Categorizes participants based on clinical traits.
+- generate_reward_stats_and_perform_ttest() – Computes reward statistics and conducts t-tests.
+
+Notes
+- Time series analyses are conducted separately in Jupyter Notebook for visualization.
+- The project primarily focuses on statistical comparisons between different psychological measures and behavioral responses.
+
+How to Utilize the mainpy:
+Run the `main()` function to execute the full data processing and analysis pipeline.
+
